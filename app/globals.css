@@ -1,0 +1,591 @@
+:root {
+    --main-text-color: #333c3b;
+    --main-text-color-hover: #198754;
+    --main-background-color: #198754;
+  }
+/* 공통 시작 */
+html, body {
+    height: 100%;
+}
+
+
+.header-nav {
+    box-shadow: 0 .5rem 1rem #00000026;
+}
+p, span, h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    color: var(--main-text-color);
+}
+ul, li {
+    list-style: none;
+}
+.log-btn, .log-btn:active, .log-btn:focus, .log-btn:visited {
+    background-color: transparent !important;
+    border: none;    
+}
+.log-btn:hover {
+    background-color: transparent;    
+}
+.log-btn svg, .log-btn span {
+    color: var(--main-text-color);
+    transition: all 0.3s ease-in-out;
+}
+.log-btn:hover svg, .log-btn:hover span {
+    color: var(--main-text-color-hover);
+}
+.user-name {
+    color: var(--main-text-color);
+}
+
+.custom-search-bar {
+    max-width: 300px;
+    width: 100%;
+  }
+  
+  .custom-search-input {
+    border-radius: 20px 0 0 20px;
+    border: 1px solid var(--main-text-color);
+    padding: 8px 12px;
+  }
+  
+  .custom-search-btn {
+    border-radius: 0 20px 20px 0;
+    background-color: var(--main-background-color);
+    border: 1px solid var(--main-background-color);
+    padding: 8px 12px;
+  }
+  
+  .custom-search-btn:hover {
+    background-color: var(--main-text-color-hover);
+    border: 1px solid var(--main-text-color-hover);
+  }
+  .section-area {
+    margin-top: 2rem;
+  }
+  .breadcrumb-area ol li a {
+    text-decoration: none;
+    color: var(--main-text-color);
+    transition: all 0.3s ease-in-out;
+  }
+  .breadcrumb-area ol li a:hover {
+    color: var(--main-text-color-hover);
+  }
+  /* main {
+    height: calc(100% - 56px - 154px);
+  } */
+  
+/* 공통 종료 */
+/* 헤더 시작 */
+
+.book-logo span {
+    color: var(--main-background-color);
+}
+.header-background {
+    background-color: #fff6ef;
+    width: 100%;
+    height: 450px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+}
+.bg-body-tertiary {
+    background-color: transparent !important;
+}
+.main-logo div p {
+    color: var(--main-background-color);
+    margin-left: 0.2rem;
+}
+.main-logo div p span {
+    font-weight: bold;
+}
+.header-title {
+    color: #fff;
+    font-weight: bold;
+    font-size: 2.5rem;
+    text-align: center;
+    line-height: 1.2;
+    color: #fff;
+}
+.header-title svg {
+    color: var(--main-background-color);
+}
+.book-search {
+    width: 600px;
+    height: 40px;
+}
+.book-search > input {
+    border: none;
+    width: 100%;
+    height: 40px;
+    padding: 20px;
+    border-radius: 5px;
+    
+}
+.book-search > input:focus {
+    outline: none;
+}
+.book-search > button {
+    position: relative;
+}
+.book-search > button svg {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.book-background {
+    background: url(../public/leaves-1076307_1920.jpg) no-repeat;
+    width: 100%;
+    height: 550px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.book-background > div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.navbar-nav > a,  .navbar-nav > button {
+    color: var(--main-text-color);
+  }
+.navbar-nav > a:hover, .navbar-nav > button:hover {
+    color: var(--main-text-color-hover);
+}
+.user-info {
+    /* width: 50%; */
+    display: flex;
+    justify-content: flex-end;
+    /* margin-left: 3rem; */
+}
+.membership-btn, .membership-btn02 {
+    display: flex;
+    align-items: center;
+    border: none;
+    background-color: transparent;
+    color: var(--main-text-color);
+    padding: 0;
+}
+.membership-btn:hover, .membership-btn02:hover {
+    background-color: transparent;
+    color: var(--main-text-color-hover);
+    border: none;
+}
+.membership-btn span, .membership-btn02 span {
+    transition: all 0.3s ease-in-out;
+}
+.membership-btn span:hover, .membership-btn02 span:hover {
+    color: var(--main-text-color-hover);
+}
+.membership-btn span:focus, .membership-btn span:active, .membership-btn:focus, .membership-btn:active, .membership-btn02 span:focus, .membership-btn02 span:active, .membership-btn02:focus, .membership-btn02:active {
+    background-color: transparent;
+}
+
+/* 헤더 종료 */
+
+/* 회원가입 시작 */
+/* 회원가입 종료 */
+
+/* 장바구니 페이지 시작 */
+.cart-area, .register-area {
+    height: calc(100vh - 56px - 146px);
+    overflow-y: scroll;
+}
+.cart-area::-webkit-scrollbar, .register-area::-webkit-scrollbar {
+    display: none;
+}
+/* 장바구니 페이지 종료 */
+
+/* 메인 콘텐츠 시작 */
+.menu-tas > ul, .menu-tas > ul li .nav-link {
+    border: none;
+    color: var(--main-text-color);
+    transition: all 0.3s ease-in-out;
+}
+.book-tabs {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.book-tabs .nav-link {
+    color: #333; /* 기본 글씨 색상 */
+    font-weight: 500;
+    transition: all 0.3s ease-in-out;
+    border-bottom: 2px solid transparent !important; /* 기본적으로 밑줄 없음 */
+    padding-bottom: 5px; /* 밑줄과 텍스트 간격 유지 */
+    font-size: 1rem; /* 고정된 글씨 크기 */
+}
+
+.book-tabs .nav-link:hover {
+    color: var(--main-text-color-hover); /* 마우스 오버 시 색상 변경 */
+}
+
+.book-tabs .nav-link.active {
+    color: #007bff !important; /* 선택된 탭 글씨 색 */
+    border-bottom: 2px solid #007bff !important; /* 선택된 탭 밑줄 */
+    font-weight: 500; /* 폰트 두께 일정하게 유지 */
+    font-size: 1rem; /* 클릭 시에도 글씨 크기 유지 */
+}
+.tab-content h4 {
+    color: var(--main-text-color);
+    margin-top: 1rem;
+}
+.tab-content .row {
+    margin-top: 20px;
+}
+.tab-content .row .col img {
+    width: 100%; 
+    height: 250px; 
+    object-fit: contain; 
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+.nav-tabs li button {
+    color: var(--main-text-color);
+}
+/* Tabs 스타일 */
+.custom-tabs .nav-link {
+    border: none; /* 기본 border 없애기 */
+    padding: 0.5rem 1rem;
+    font-weight: 600;
+    color: #333;
+}
+
+.custom-tabs .nav-link:hover {
+    color: var(--main-background-color);
+}
+
+/* 활성화된 탭에 밑줄 추가 */
+.custom-tabs .nav-link.active {
+    border-bottom: 3px solid var(--main-background-color); /* 원하는 색상으로 밑줄 추가 */
+    color: var(--main-background-color); /* 활성화된 탭의 텍스트 색상 */
+}
+
+/* Tab 영역의 컨텐츠 margin을 조정 */
+.custom-tab .tab-content {
+    margin-top: 20px;
+}
+.more-books {
+    background-color: transparent;
+    border: none;
+    color: var(--main-text-color);
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+}
+.more-books:focus {
+    background-color: transparent !important;
+    color: var(--main-text-color);
+}
+.more-books:hover, .more-books:active, .more-books:visited {
+    background-color: transparent !important;
+    color: var(--main-text-color-hover);
+}
+.card-area > .col .card {
+    transition: all 0.3s ease-in-out;
+}
+.card-area > .col .card:hover {
+    filter: brightness(0.9);
+}
+/* 메인 콘텐츠 종료 */
+
+/* 카트 페이지 시작 */
+    .cart-area > h4 {
+        font-size: 1.2rem;
+    }
+/* 카트 페이지 종료 */
+
+/* 한강 페이지 시작 */
+    .hangang-author {
+        background: url(../public/korea-3621711_1920.png) repeat;
+        width: 100%;
+        height: 400px;
+        background-position: center;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+    .hangang-author-list {
+        position: relative;
+    }
+    .han-books-more {
+        /* position: absolute;
+        right: 0;
+        bottom: 50px; */
+        color: #fff;
+    }
+/* 한강 페이지 종료 */
+
+/* 푸터 시작 */
+.footer-nav {
+    display: flex;
+    justify-content: flex-end;
+}
+.footer-nav nav a {
+    transition: all 0.3s ease-in-out !important;
+}
+.footer-nav nav a:hover {
+    color: gray !important;
+}
+/* 푸터 종료 */
+
+
+@media screen and (max-width:1400px) { 
+   .navbar-search {
+    width: 30% !important;
+    margin-right: 2rem;
+   }
+   .membership-btn {
+    margin-left: 1rem !important;
+   }
+}
+
+@media screen and (max-width:1200px) { 
+    .hangang-author-list > div > h1 {
+        font-size: 2rem;
+    }
+    .hangang-author-list > div > p {
+        font-size: 0.85rem;
+    }
+ }
+
+@media screen and (max-width:991px) { 
+    .user-info {
+        width: 100%;
+        margin-left: 0;
+        justify-content: flex-start;
+    }    
+    .header-title {
+        font-size: 2rem;
+    }
+    .book-search {
+        width: 100% !important;
+    }
+    .book-background {
+        height: 450px;
+    }
+    .custom-tabs .nav-link {
+        font-size: 0.8rem;
+        letter-spacing: -0.1px;
+    }
+    .navbar-search {
+        justify-content: flex-start !important;
+        width: 100% !important;
+    }
+    .membership-btn {
+        margin-left: auto !important;
+       }
+    .user-info {
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+    }
+    .section-title {
+        font-size: 1rem;
+    }
+    .card-area > .col {
+        margin-top: 0.5rem;
+    }
+    
+    
+    .card-title {
+        height: 25px !important;
+        font-size: 0.9rem !important;
+    }
+    .card-text {
+        font-size: 0.8rem !important;
+    }
+    .book-search-area {
+        width: 100% !important;
+    }
+    .book-info-list > img {
+        width: 45% !important;
+    }
+    .book-info-content {
+        width: 50% !important;
+    }
+    .detail-title {
+        flex-direction: column;
+    }
+    .detail-title span {
+        margin-left: 0 !important;
+        margin-top: 0.5rem;
+    }
+    
+    .hangang-profile, .hangang-books-area {
+        width: 50%;
+    }
+
+    .hangang-author-list > div > h1 {
+        font-size: 1.5rem;
+    }
+    .hangang-author-list > div > p {
+        font-size: 0.75rem;
+    }
+    .han-books-list li {
+        margin-right: 0.3rem !important;
+        margin-left: 0.3rem !important;
+    }
+    .han-books-list li img {
+        width: 100px;
+        height: 153px;        
+    }
+    .han-books-list li h5 {
+        font-size: 1rem;
+    }
+
+    .footer-nav nav a {
+        font-size: 0.8rem;
+    }
+    .review-btn > button, .cart-btn > button, .cart-table button {
+        font-size: 0;
+    }
+    .review-table tr th, .review-table tr td, .cart-table tr th, .cart-table tr td {
+        font-size: 0.8rem !important;
+        vertical-align: middle;
+    }
+    .cart-table img {
+        width: 40px !important;
+        height: 60px !important;
+    }
+    .social-area a svg {
+        width: 5%;
+    }
+}
+
+@media screen and (max-width:768px) { 
+    .detail-title {
+        align-items: flex-start !important;
+    }
+    .header-title {
+        font-size: 1.5rem;
+        margin-top: 0;
+    }
+    .header-background {
+        height: 250px;
+    }
+    .background-books, .read-human {
+        height: auto;
+    }
+   
+    .book-background {
+        height: 350px;
+    }
+    .custom-tabs .nav-link {
+        font-size: .75rem;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .book-search > input {
+        height: 35px !important;
+    }
+    .book-search > button {
+        width: 35px !important;
+        height: 35px !important;
+    }
+    
+    
+    .book-info-list {
+        flex-direction: column;
+    }
+    .book-info-list > img, .book-info-content {
+        width: 100% !important;
+    }
+    .book-info-content {
+        margin-top: 1rem;
+    }
+    .cart-table tbody tr td:nth-of-type(2) {
+        width: 30%;
+    }
+    .Product-information {
+        max-width: 200px !important;
+    }
+
+
+    .hangang-profile {
+        width: 50%;
+    }
+    .hangang-books-area {
+        width: 50%;
+    }
+    .hangang-author-list > div > h1 {
+        font-size: 1.2rem;
+    }
+    .hangang-author-list > div > p {
+        font-size: .65rem;
+    }
+    
+    .han-books-list li img {
+        width: 70px;
+        height: 107px;
+    }
+    .han-books-list li h5 {
+        font-size: 0.8rem;
+    }
+
+    .footer-website {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 0.5rem;
+    }
+    .footer-nav {
+        justify-content: flex-start;
+    }
+    .footer-nav nav {
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+    .footer-nav nav a {
+        font-size: 0.8rem;
+    }
+    .footer-link {
+        transition: color 0.3s ease-in-out;
+      }
+
+      .footer-link:hover {
+        color: #ffd700; 
+      }
+    
+}
+@media screen and (max-width:576px) { 
+    .book-background {
+        height: 250px;
+    }
+    .Product-information {
+        max-width: 150px !important;
+    }
+    .hangang-author-list > div > h1 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .hangang-author-list {
+        flex-direction: column;
+        justify-content: center !important;
+    }
+    .hangang-author-list > div > p {
+        font-size: 0;
+    }
+
+    .hangang-author {
+        height: 300px;
+    }
+    .hangang-profile, .hangang-books-area {
+        width: 100%;
+    }
+    .hangang-books-area {
+        align-items: center !important;
+        margin-top: 1rem;
+        position: relative;
+    }
+    .han-books-more {
+        position: absolute;
+        right: 0;
+        bottom: -25px;
+    }
+    
+    /* .review-table tr th, .review-table tr td {
+        font-size: 0.68rem !important;
+    } */
+}
