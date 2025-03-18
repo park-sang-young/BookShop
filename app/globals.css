@@ -180,7 +180,7 @@ ul, li {
     color: var(--main-text-color-hover);
 }
 .membership-btn span:focus, .membership-btn span:active, .membership-btn:focus, .membership-btn:active, .membership-btn02 span:focus, .membership-btn02 span:active, .membership-btn02:focus, .membership-btn02:active {
-    background-color: transparent;
+    background-color: transparent !important;
 }
 
 /* 헤더 종료 */
